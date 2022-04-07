@@ -55,7 +55,7 @@ class LoginFormAuthenticator extends AbstractLoginFormAuthenticator
         }
 
         //Сделаем редирект после успешной авторизации
-        return new RedirectResponse($this->urlGenerator->generate('main_homepage'));
+        return new RedirectResponse($this->urlGenerator->generate('main_profile_index'));
     }
 
     protected function getLoginUrl(Request $request): string
