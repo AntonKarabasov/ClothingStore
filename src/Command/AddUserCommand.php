@@ -119,7 +119,6 @@ class AddUserCommand extends Command
     }
 
     //Напишем метод для создания пользователя
-
     /**
      * @param string $email
      * @param string $password
