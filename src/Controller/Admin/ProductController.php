@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Product;
 use App\Form\EditProductFormType;
+use App\Form\Handler\ProductFormHandler;
 use App\Repository\ProductRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -33,7 +34,7 @@ class ProductController extends AbstractController
      * @Route("/edit/{id}", name="edit")
      * @Route("/add", name="add")
      */
-    public function edit(Request $request, Product $product = null): Response
+    public function edit(Request $request, ProductFormHandler $productFormHandler, Product $product = null): Response
     {
         //Получим созданную форму для редактирования продуктов и передадим форме продукт
         $form = $this->createForm(EditProductFormType::class, $product);
@@ -41,10 +42,7 @@ class ProductController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager = $this->getDoctrine()->getManager();
-
-            $entityManager->persist($product);
-            $entityManager->flush();
+           $product = $productFormHandler->processEditForm($product, $form);
 
             return $this->redirectToRoute('admin_product_edit', ['id' => $product->getId()]);
         }
