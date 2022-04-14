@@ -10,14 +10,13 @@ use Symfony\Component\Form\Form;
 
 class ProductFormHandler
 {
-
 	/**
-	 * @var \App\Utils\File\FileSaver
+	 * @var FileSaver
 	 */
 	private FileSaver $fileSaver;
 
 	/**
-	 * @var \App\Utils\Manager\ProductManager
+	 * @var ProductManager
 	 */
 	private ProductManager $productManager;
 
@@ -50,7 +49,6 @@ class ProductFormHandler
 
 		//3.3 Сохранить Product с ProductImage
 		$this->productManager->save($product);
-		dd($product);
 
 		return $product;
 	}

@@ -8,7 +8,6 @@ use Doctrine\Persistence\ObjectRepository;
 
 class ProductManager
 {
-
 	/**
 	 * @var EntityManagerInterface
 	 */
@@ -40,7 +39,7 @@ class ProductManager
 	}
 
 	/**
-	 * @param \App\Entity\Product $product
+	 * @param Product $product
 	 *
 	 * @return void
 	 */
