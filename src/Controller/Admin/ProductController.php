@@ -37,10 +37,14 @@ class ProductController extends AbstractController
      */
     public function edit(Request $request, ProductFormHandler $productFormHandler, Product $product = null): Response
     {
-        //Получим созданную форму для редактирования продуктов и передадим форме продукт
-        $form = $this->createForm(EditProductFormType::class, $product);
-        //Получим данные из запроса
-        $form->handleRequest($request);
+		if (!$product) {
+			$product = new Product();
+		}
+
+	    //Получим созданную форму для редактирования продуктов и передадим форме продукт
+	    $form = $this->createForm(EditProductFormType::class, $product);
+	    //Получим данные из запроса
+	    $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
            $product = $productFormHandler->processEditForm($product, $form);
@@ -48,8 +52,12 @@ class ProductController extends AbstractController
             return $this->redirectToRoute('admin_product_edit', ['id' => $product->getId()]);
         }
 
+		$images = $product->getProductImages()
+			? $product->getProductImages()->getValues()
+			: [];
+
         return $this->render('admin/product/edit.html.twig', [
-			'images' => $product->getProductImages()->getValues(),
+			'images' => $images,
             'product' => $product,
             'form' => $form->createView()
         ]);
