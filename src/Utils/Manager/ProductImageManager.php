@@ -88,7 +88,7 @@ class ProductImageManager
 
 	/**
 	 * @param ProductImage $productImage
-	 * @param string                   $productDir
+	 * @param string $productDir
 	 *
 	 * @return void
 	 */
