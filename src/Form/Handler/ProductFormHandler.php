@@ -3,6 +3,7 @@
 namespace App\Form\Handler;
 
 use App\Entity\Product;
+use App\Form\DTO\EditProductModel;
 use App\Utils\File\FileSaver;
 use App\Utils\Manager\ProductManager;
 use Doctrine\ORM\EntityManagerInterface;
@@ -27,9 +28,29 @@ class ProductFormHandler
 		$this->productManager = $productManager;
 	}
 
-	public function processEditForm(Product $product, Form $form)
+	/**
+	 * @param EditProductModel $editProductModal
+	 * @param Form $form
+	 *
+	 * @return Product|null
+	 */
+	public function processEditForm(EditProductModel $editProductModal, Form $form): ?Product
 	{
 		// TODO: ADD A NEW IMAGE WITH DIFFERENT SIZES TO THE PRODUCT
+		//0. Построим продукт перед сохранением
+		$product = new Product();
+
+		if ($editProductModal->id) {
+			$product = $this->productManager->find($editProductModal->id);
+		}
+
+		$product->setTitle($editProductModal->title);
+		$product->setPrice($editProductModal->price);
+		$product->setQuantity($editProductModal->quantity);
+		$product->setDescription($editProductModal->description);
+		$product->setIsPublished($editProductModal->isPublished);
+		$product->setIsDeleted($editProductModal->isDeleted);
+
 		//1. Сохраненить изменений продукта
 		$this->productManager->save($product);
 
