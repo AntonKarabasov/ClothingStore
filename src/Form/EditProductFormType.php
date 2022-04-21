@@ -94,5 +94,4 @@ class EditProductFormType extends AbstractType
 			'data_class' => EditProductModel::class,
 		]);
 	}
-
 }
