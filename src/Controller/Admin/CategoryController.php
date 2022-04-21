@@ -3,6 +3,7 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Category;
+use App\Form\DTO\EditCategoryModal;
 use App\Form\EditCategoryFormType;
 use App\Form\Handler\CategoryFormHandler;
 use App\Repository\CategoryRepository;
@@ -34,15 +35,13 @@ class CategoryController extends AbstractController
 	 */
 	public function edit(Request $request, CategoryFormHandler $categoryFormHandler, Category $category = null): Response
 	{
-		if (!$category) {
-			$category = new Category();
-		}
+		$editCategoryModal = EditCategoryModal::makeFromCategory($category);
 
-		$form = $this->createForm(EditCategoryFormType::class, $category);
+		$form = $this->createForm(EditCategoryFormType::class, $editCategoryModal);
 		$form->handleRequest($request);
 
 		if ($form->isSubmitted() && $form->isValid()) {
-			$categoryFormHandler->processEditForm($category);
+			$category = $categoryFormHandler->processEditForm($editCategoryModal);
 
 			return $this->redirectToRoute('admin_category_edit', ['id' => $category->getId()]);
 		}

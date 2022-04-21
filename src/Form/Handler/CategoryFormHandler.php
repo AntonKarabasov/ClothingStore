@@ -3,6 +3,7 @@
 namespace App\Form\Handler;
 
 use App\Entity\Category;
+use App\Form\DTO\EditCategoryModal;
 use App\Utils\Manager\CategoryManager;
 
 class CategoryFormHandler
@@ -18,10 +19,23 @@ class CategoryFormHandler
 		$this->categoryManager = $categoryManager;
 	}
 
-	public function processEditForm(Category $category): void
+	/**
+	 * @param EditCategoryModal $editCategoryModal
+	 *
+	 * @return Category
+	 */
+	public function processEditForm(EditCategoryModal $editCategoryModal): Category
 	{
-		$title = $category->getTitle();
-		$category->setTitle($title);
+		$category = new Category();
+
+		if ($editCategoryModal->id) {
+			$category = $this->categoryManager->find($editCategoryModal->id);
+		}
+
+		$category->setTitle($editCategoryModal->title);
+
 		$this->categoryManager->save($category);
+
+		return $category;
 	}
 }
