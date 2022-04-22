@@ -23,7 +23,7 @@ class CategoryController extends AbstractController
 	 */
     public function list(CategoryRepository $categoryRepository): Response
     {
-	    $categories = $categoryRepository->findBy(['isDeleted' => false, 'isDeleted' => null], ['id' => 'DESC']);
+	    $categories = $categoryRepository->findBy(['isDeleted' => false], ['id' => 'DESC']);
 
 	    return $this->render('admin/category/list.html.twig', [
 		    'categories' => $categories
