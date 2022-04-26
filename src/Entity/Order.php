@@ -62,6 +62,7 @@ class Order
 		$this->createdAt = new \DateTimeImmutable();
 		$this->updateAt = new \DateTimeImmutable();
 		$this->orderProducts = new ArrayCollection();
+		$this->isDeleted = false;
 	}
 
 
