@@ -24,39 +24,40 @@ class CartApiController extends AbstractController
 	 */
     public function saveCart(Request $request, CartRepository $cartRepository, CartProductRepository $cartProductRepository, ProductRepository $productRepository): Response
     {
-		$productId = $request->request->get('productId');
-		$phpSessionId = $request->cookies->get('PHPSESSID');
+	    $productId = $request->request->get('productId');
+	    $phpSessionId = $request->cookies->get('PHPSESSID');
 
-		$product = $productRepository->findOneBy(['uuid' => $productId]);
+	    $product = $productRepository->findOneBy(['uuid' => $productId]);
 
-		$cart = $cartRepository->findBy(['sessionId' => $phpSessionId]);
-		if (!$cart) {
-			$cart = new Cart();
-			$cart->setSessionId($phpSessionId);
-		}
+	    $cart = $cartRepository->findOneBy(['sessionId' => $phpSessionId]);
+	    if (!$cart) {
+		    $cart = new Cart();
+		    $cart->setSessionId($phpSessionId);
+	    }
 
-		$cartProduct = $cartProductRepository->findOneBy(['cart' => $cart, 'product' => $product]);
-		if (!$cartProduct) {
-			$cartProduct = new CartProduct();
-			$cartProduct->setCart($cart);
-			$cartProduct->setQuantity(1);
-			$cartProduct->setProduct($product);
+	    $cartProduct = $cartProductRepository->findOneBy(['cart' => $cart, 'product' => $product]);
+	    if (!$cartProduct) {
+		    $cartProduct = new CartProduct();
+		    $cartProduct->setCart($cart);
+		    $cartProduct->setQuantity(1);
+		    $cartProduct->setProduct($product);
 
-			$cart->addCartProduct($cartProduct);
-		} else {
-			$quantity = $cartProduct->getQuantity() + 1;
-			$cartProduct->setQuantity($quantity);
-		}
+		    $cart->addCartProduct($cartProduct);
+	    } else {
+		    $quantity = $cartProduct->getQuantity() + 1;
+		    $cartProduct->setQuantity($quantity);
+	    }
 
-		$entityManager = $this->getDoctrine()->getManager();
-		$entityManager->persist($cart);
-		$entityManager->persist($cartProduct);
-		$entityManager->flush();
+	    $entityManager = $this->getDoctrine()->getManager();
+	    $entityManager->persist($cart);
+	    $entityManager->persist($cartProduct);
+	    $entityManager->flush();
 
-        return new JsonResponse([
-			'success' => false,
+
+	    return new JsonResponse([
+			'success' => true,
 			'data' => [
-				'test' => 123
+				'test' => 200
 			]
         ]);
     }
