@@ -24,7 +24,7 @@ class CartApiController extends AbstractController
 	 */
     public function saveCart(Request $request, CartRepository $cartRepository, CartProductRepository $cartProductRepository, ProductRepository $productRepository): Response
     {
-	    $productId = $request->request->get('productId');
+	    $productId = $request->getContent();
 	    $phpSessionId = $request->cookies->get('PHPSESSID');
 
 	    $product = $productRepository->findOneBy(['uuid' => $productId]);
@@ -47,6 +47,7 @@ class CartApiController extends AbstractController
 		    $quantity = $cartProduct->getQuantity() + 1;
 		    $cartProduct->setQuantity($quantity);
 	    }
+
 
 	    $entityManager = $this->getDoctrine()->getManager();
 	    $entityManager->persist($cart);
