@@ -8,7 +8,6 @@ use App\Utils\Manager\CategoryManager;
 
 class CategoryFormHandler
 {
-
 	/**
 	 * @var CategoryManager
 	 */
