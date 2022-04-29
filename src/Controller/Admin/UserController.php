@@ -3,11 +3,13 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Category;
+use App\Entity\StaticStorage\UserStaticStorage;
 use App\Entity\User;
 use App\Form\Admin\EditUserFormType;
 use App\Form\Handler\UserFormHandler;
 use App\Repository\UserRepository;
 use App\Utils\Manager\CategoryManager;
+use App\Utils\Manager\UserManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,6 +25,10 @@ class UserController extends AbstractController
 	 */
 	public function list(UserRepository $userRepository): Response
 	{
+		if (!$this->isGranted(UserStaticStorage::USER_ROLE_SUPER_ADMIN)) {
+			return $this->redirectToRoute('admin_dashboard_show');
+		}
+
 		$users = $userRepository->findBy(['isDeleted' => false], ['id' => 'DESC']);
 
 		return $this->render('admin/user/list.html.twig', [
@@ -36,6 +42,10 @@ class UserController extends AbstractController
 	 */
 	public function edit(Request $request, UserFormHandler $userFormHandler, User $user= null): Response
 	{
+		if (!$this->isGranted(UserStaticStorage::USER_ROLE_SUPER_ADMIN)) {
+			return $this->redirectToRoute('admin_dashboard_show');
+		}
+
 		if (!$user) {
 			$user = new User();
 		}
@@ -64,12 +74,12 @@ class UserController extends AbstractController
 	/**
 	 * @Route("/delete/{id}", name="delete")
 	 */
-	public function delete(Category $category, CategoryManager $categoryManager): Response
+	public function delete(User $user, UserManager $userManager): Response
 	{
-//		$categoryManager->remove($category);
-//
-//		$this->addFlash('warning', 'The category was successfully deleted!');
-//
-//		return $this->redirectToRoute('admin_category_list');
+		$userManager->remove($user);
+
+		$this->addFlash('warning', 'The User was successfully deleted!');
+
+		return $this->redirectToRoute('admin_user_list');
 	}
 }

@@ -33,8 +33,14 @@ class UserFormHandler
 	public function processEditForm(Form $form): User
 	{
 		$plainPassword = $form->get('plainPassword')->getData();
+		$newEmail = $form->get('newEmail')->getData();
+
 		/** @var User $user */
 		$user = $form->getData();
+
+		if (!$user->getId()) {
+			$user->setEmail($newEmail);
+		}
 
 		if ($plainPassword) {
 			$encodedPassword = $this->userPasswordHasher->hashPassword($user, $plainPassword);

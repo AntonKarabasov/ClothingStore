@@ -16,6 +16,22 @@ class EditUserFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+	        ->add('newEmail', TextType::class, [
+		        'label' => 'New Email',
+		        'required' => false,
+		        'mapped' => false,
+		        'attr' => [
+			        'class' => 'form-control'
+		        ]
+	        ])
+	        ->add('plainPassword', TextType::class, [
+		        'label' => 'New password',
+		        'required' => false,
+		        'mapped' => false,
+		        'attr' => [
+			        'class' => 'form-control'
+		        ]
+	        ])
             ->add('plainPassword', TextType::class, [
 				'label' => 'New password',
 				'required' => false,
