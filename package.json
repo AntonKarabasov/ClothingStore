@@ -24,6 +24,9 @@
         "chart.js": "2.9.4",
         "jquery": "3.5.1",
         "jquery.easing": "1.4.1",
-        "popper.js": "1.16.1"
+        "popper.js": "1.16.1",
+        "vue": "^3.2.33",
+        "vue-loader": "16.7",
+        "vue-template-compiler": "^2.6.14"
     }
 }
