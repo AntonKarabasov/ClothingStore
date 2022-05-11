@@ -18,11 +18,13 @@ export default {
     ...mapState("products", ["orderProducts"]),
     totalPrice() {
       let totalPrice = 0;
-      this.orderProducts.forEach(orderProduct => {
-        totalPrice +=
-            parseFloat(orderProduct.pricePerOne) * orderProduct.quantity
-      });
-      return parseFloat(totalPrice);
+      if (this.orderProducts) {
+        this.orderProducts.forEach(orderProduct => {
+          totalPrice +=
+              parseFloat(orderProduct.pricePerOne) * orderProduct.quantity
+        });
+      }
+      return parseFloat(totalPrice.toFixed(2));
     }
   }
 }
