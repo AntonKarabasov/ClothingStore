@@ -25,6 +25,7 @@ class OrderFormHandler
 	 */
 	public function processEditForm(Order $order): Order
 	{
+		$this->orderManager->recalculateOrderTotalPrice($order);
 		$this->orderManager->save($order);
 
 		return $order;
