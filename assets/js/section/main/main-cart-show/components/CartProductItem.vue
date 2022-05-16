@@ -28,12 +28,14 @@
     </td>
     <td class="quantity-col">
       <input
-        v-model="quantity"
-        type="number"
-        class="form-control"
-        min="1"
-        step="1"
-        @focusout="updateQuantity"
+          v-model="quantity"
+          type="number"
+          class="form-control"
+          min="1"
+          :max="productQuantityMax"
+          step="1"
+          @focusout="updateQuantity"
+          @change="updateMaxValue($event, 'quantity', productQuantityMax)"
       >
     </td>
     <td class="total-col">
@@ -83,6 +85,9 @@ export default {
     },
     urlShowProduct() {
       return this.staticStore.url.viewProduct + "/" + this.cartProduct.product.uuid;
+    },
+    productQuantityMax() {
+      return parseInt(this.cartProduct.product.quantity);
     }
   },
   methods: {
@@ -103,6 +108,17 @@ export default {
       };
 
       this.updateCartProductQuantity(payload);
+    },
+    updateMaxValue(event, field, maxValue) {
+      const value = Number.parseFloat(event.target.value);
+      let updatedValue = 1;
+      if (value > 0 && value <= maxValue) {
+        updatedValue = value;
+      } else if (value > maxValue) {
+        updatedValue = maxValue;
+      }
+
+      this.$data[field] = updatedValue;
     }
   }
 }
