@@ -30,11 +30,13 @@
         if (typeof window.staticStore === 'undefined') {
             window.staticStore = {};
         }
+        window.staticStore.isUserLoggedIn = {% if app.user %}true{% else %}false{% endif %};
         window.staticStore.urlCart = "{{ path('api_carts_get_collection') }}";
         window.staticStore.urlCartProduct = "{{ path('api_cart_products_get_collection') }}";
         window.staticStore.urlOrder = "{{ path('api_orders_get_collection') }}";
         window.staticStore.urlViewProduct = "{{ path('main_product_show_blank') }}";
         window.staticStore.urlAssetImageProducts = "{{ asset('uploads/images/products') }}";
+        window.staticStore.urlLoginPage = "{{ path('main_login') }}";
     </script>
     {{ encore_entry_script_tags('appMainCartShow') }}
 {% endblock %}
