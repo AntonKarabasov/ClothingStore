@@ -144,6 +144,9 @@ const actions = {
         if (result.data && result.status === StatusCodes.CREATED) {
             dispatch('getCart');
         }
+    },
+    cleanCartForMainShowCart({commit}) {
+        commit('setCart', {});
     }
 };
 

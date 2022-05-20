@@ -9,3 +9,6 @@ if (document.getElementById('appMainMenuCart')) {
 window.vueMenuCartInstance = {};
 window.vueMenuCartInstance.addCartProduct =
     (productData) => store.dispatch('cart/addCartProduct', productData);
+
+window.vueMenuCartInstance.cleanCartForMainShowCart =
+    () => store.dispatch('cart/cleanCartForMainShowCart')

@@ -49,6 +49,7 @@ const getters = {
 
 const actions = {
      async getCart({ state, commit }) {
+         console.log(state.cart.cartProducts);
          const url = state.staticStore.url.apiCart;
 
          const result = await axios.get(url, apiConfig);
@@ -64,7 +65,6 @@ const actions = {
                  type: 'info',
                  message: 'Your cart is empty ...'
              });
-             console.log(state.alert)
          }
     },
     async cleanCart({ state, commit }) {
@@ -124,6 +124,7 @@ const actions = {
             });
             commit('setIsSentForm', true);
             dispatch('cleanCart');
+            window.vueMenuCartInstance.cleanCartForMainShowCart();
         }
     }
 };
