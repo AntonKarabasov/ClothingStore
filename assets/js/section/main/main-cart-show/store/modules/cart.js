@@ -64,6 +64,7 @@ const actions = {
                  type: 'info',
                  message: 'Your cart is empty ...'
              });
+             console.log(state.alert)
          }
     },
     async cleanCart({ state, commit }) {
