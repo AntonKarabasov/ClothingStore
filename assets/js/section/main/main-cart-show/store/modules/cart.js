@@ -49,7 +49,6 @@ const getters = {
 
 const actions = {
      async getCart({ state, commit }) {
-         console.log(state.cart.cartProducts);
          const url = state.staticStore.url.apiCart;
 
          const result = await axios.get(url, apiConfig);
