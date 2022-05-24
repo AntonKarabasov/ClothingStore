@@ -1,3 +1,6 @@
-#index:
-#    path: /
-#    controller: App\Controller\Main\DefaultController::index
+index:
+  path: /
+  defaults:
+    _controller: Symfony\Bundle\FrameworkBundle\Controller\RedirectController::urlRedirectAction
+    path: '/%locale%'
+    permanent: true

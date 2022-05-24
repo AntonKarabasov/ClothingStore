@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="ru">
+  <file id="messages.ru">
+    <unit id="jbqF3b8" name="Your changes were saved!">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/CategoryController.php:47</note>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/OrderController.php:52</note>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/ProductController.php:52</note>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/UserController.php:59</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Your changes were saved!</source>
+        <target>Ваши изменения были сохранены!</target>
+      </segment>
+    </unit>
+    <unit id="UPTed6e" name="Something went wrong. Please check your form!">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/CategoryController.php:53</note>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/OrderController.php:58</note>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/ProductController.php:58</note>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/UserController.php:65</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Something went wrong. Please check your form!</source>
+        <target>Что-то пошло не так. Проверьте форму!</target>
+      </segment>
+    </unit>
+    <unit id="3Husu0M" name="The category was successfully deleted!">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/CategoryController.php:69</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>The category was successfully deleted!</source>
+        <target>Категория была успешно удалена!</target>
+      </segment>
+    </unit>
+    <unit id="iRsxDCJ" name="The order was successfully deleted!">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/OrderController.php:96</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>The order was successfully deleted!</source>
+        <target>Заказ был успешно удалён!</target>
+      </segment>
+    </unit>
+    <unit id="TtzuCsi" name="The product was successfully deleted!">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/ProductController.php:79</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>The product was successfully deleted!</source>
+        <target>Продукт был успешно удалён!</target>
+      </segment>
+    </unit>
+    <unit id="_Vk44kg" name="The User was successfully deleted!">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Admin/UserController.php:81</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>The User was successfully deleted!</source>
+        <target>Пользователь был успешно удалён!</target>
+      </segment>
+    </unit>
+    <unit id="vN4SXKk" name="An email has been sent. Please check your inbox to complete registration.">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Main/RegistrationController.php:62</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>An email has been sent. Please check your inbox to complete registration.</source>
+        <target>Письмо было отравлено. Пожалуйста проверьте вашу почту.</target>
+      </segment>
+    </unit>
+    <unit id="kQWnsB7" name="Your email address has been verified.">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Controller/Main/RegistrationController.php:89</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Your email address has been verified.</source>
+        <target>Ваш email адрес был успешно подтвержден. </target>
+      </segment>
+    </unit>
+    <unit id="fozSBW2" name="Title">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditCategoryFormType.php:18</note>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditProductFormType.php:26</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Title</source>
+        <target>Название</target>
+      </segment>
+    </unit>
+    <unit id="BzwWNMS" name="status">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditOrderFormType.php:20</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>status</source>
+        <target>Статус</target>
+      </segment>
+    </unit>
+    <unit id="4Y.zskP" name="Is deleted">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditOrderFormType.php:28</note>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditProductFormType.php:88</note>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditUserFormType.php:80</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Is deleted</source>
+        <target>Удалено</target>
+      </segment>
+    </unit>
+    <unit id="tRLZfny" name="User">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditOrderFormType.php:38</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>User</source>
+        <target>Пользователь</target>
+      </segment>
+    </unit>
+    <unit id="k8kchR5" name="Price">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditProductFormType.php:37</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Price</source>
+        <target>Цена</target>
+      </segment>
+    </unit>
+    <unit id="giurjUG" name="Quantity">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditProductFormType.php:47</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Quantity</source>
+        <target>Количество</target>
+      </segment>
+    </unit>
+    <unit id="Um4Ah8w" name="Description">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditProductFormType.php:54</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Description</source>
+        <target>Описание</target>
+      </segment>
+    </unit>
+    <unit id="ziRL3Ar" name="Choose new image">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditProductFormType.php:62</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Choose new image</source>
+        <target>Выберите новое изображение</target>
+      </segment>
+    </unit>
+    <unit id="KSwG8AR" name="Category">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditProductFormType.php:69</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Category</source>
+        <target>Категории</target>
+      </segment>
+    </unit>
+    <unit id="WX.GxT8" name="Is published">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditProductFormType.php:78</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Is published</source>
+        <target>Опубликовано</target>
+      </segment>
+    </unit>
+    <unit id="W6_0vpx" name="New Email">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditUserFormType.php:19</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>New Email</source>
+        <target>Новый email</target>
+      </segment>
+    </unit>
+    <unit id="PdnfREH" name="New password">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditUserFormType.php:27</note>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditUserFormType.php:35</note>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/ChangePasswordFormType.php:20</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>New password</source>
+        <target>Новый пароль</target>
+      </segment>
+    </unit>
+    <unit id="wlM3BVR" name="Roles">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditUserFormType.php:43</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Roles</source>
+        <target>Роли</target>
+      </segment>
+    </unit>
+    <unit id="8Tpkui." name="Full name">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditUserFormType.php:52</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Full name</source>
+        <target>Введите имя</target>
+      </segment>
+    </unit>
+    <unit id="Y9zriAC" name="Phone">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditUserFormType.php:59</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Phone</source>
+        <target>Номер телефона</target>
+      </segment>
+    </unit>
+    <unit id="Vu_PIJV" name="Address">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditUserFormType.php:66</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Address</source>
+        <target>Адрес</target>
+      </segment>
+    </unit>
+    <unit id=".GbXqym" name="Zip code">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Admin/EditUserFormType.php:73</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Zip code</source>
+        <target>Индекс</target>
+      </segment>
+    </unit>
+    <unit id="Hkmh4Tp" name="Repeat Password">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/ChangePasswordFormType.php:38</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Repeat Password</source>
+        <target>Повторите пароль</target>
+      </segment>
+    </unit>
+    <unit id="RZQ0CeQ" name="Plain password">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/ChangePasswordFormType.php:17</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Plain password</source>
+        <target>Повторите пароль</target>
+      </segment>
+    </unit>
+    <unit id="s2JwFuf" name="Enter your full name">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/ProfileEditFormType.php:17</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Enter your full name</source>
+        <target>Введите ваше полное имя</target>
+      </segment>
+    </unit>
+    <unit id="SaKuyOs" name="Enter your phone">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/ProfileEditFormType.php:20</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Enter your phone</source>
+        <target>Введите ваш номер телефона</target>
+      </segment>
+    </unit>
+    <unit id="BhddwJ0" name="Enter your address">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/ProfileEditFormType.php:23</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Enter your address</source>
+        <target>Введите вашу почту</target>
+      </segment>
+    </unit>
+    <unit id="TXm0FaS" name="Enter your zipcode">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/ProfileEditFormType.php:26</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Enter your zipcode</source>
+        <target>Введите ваш индекс</target>
+      </segment>
+    </unit>
+    <unit id="KDf2_hy" name="Enter your email">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/RegistrationFormType.php:22</note>
+      </notes>
+      <segment>
+        <source>Enter your email</source>
+        <target>Введите ваш email</target>
+      </segment>
+    </unit>
+    <unit id="zfaDQSW" name="I agree to the &lt;a href=&quot;#&quot;&gt;privacy policy&lt;/a&gt;">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/RegistrationFormType.php:39</note>
+      </notes>
+      <segment>
+        <source>I agree to the &lt;a href="#"&gt;privacy policy&lt;/a&gt;</source>
+        <target><![CDATA[Я согласен с <a href="#">правилами</a>]]></target>
+      </segment>
+    </unit>
+    <unit id="wGv5ZwF" name="Enter your password">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/RegistrationFormType.php:56</note>
+      </notes>
+      <segment>
+        <source>Enter your password</source>
+        <target>Введите ваш пароль</target>
+      </segment>
+    </unit>
+    <unit id="Fe2zEyl" name="Please enter your email">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/RegistrationFormType.php:28</note>
+      </notes>
+      <segment>
+        <source>Please enter your email</source>
+        <target>Пожалуйста введите ваш email</target>
+      </segment>
+    </unit>
+    <unit id="9_qxEQv" name="Please enter your password">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/RegistrationFormType.php:63</note>
+      </notes>
+      <segment>
+        <source>Please enter your password</source>
+        <target>Пожалуйста введите ваш пароль</target>
+      </segment>
+    </unit>
+    <unit id="lpzL089" name="Email">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/src/Form/Main/ResetPasswordRequestFormType.php:15</note>
+        <note category="state" priority="1">new</note>
+      </notes>
+      <segment>
+        <source>Email</source>
+        <target>Email</target>
+      </segment>
+    </unit>
+    <unit id="sMIMdUS" name="user_signup.heading">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/templates/main/security/registration.html.twig:12</note>
+      </notes>
+      <segment>
+        <source>user_signup.heading</source>
+        <target>Форма регистрации</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
