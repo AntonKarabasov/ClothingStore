@@ -156,6 +156,10 @@
       <path value="$PROJECT_DIR$/vendor/php-translation/symfony-bundle" />
       <path value="$PROJECT_DIR$/vendor/php-translation/symfony-storage" />
       <path value="$PROJECT_DIR$/vendor/nyholm/nsa" />
+      <path value="$PROJECT_DIR$/vendor/symfony/amqp-messenger" />
+      <path value="$PROJECT_DIR$/vendor/symfony/redis-messenger" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-messenger" />
+      <path value="$PROJECT_DIR$/vendor/symfony/messenger" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />

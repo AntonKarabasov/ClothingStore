@@ -25,11 +25,7 @@ class EmailVerifier
 
     public function sendEmailConfirmation(string $verifyEmailRouteName, UserInterface $user, TemplatedEmail $email): void
     {
-        $signatureComponents = $this->verifyEmailHelper->generateSignature(
-            $verifyEmailRouteName,
-            $user->getId(),
-            $user->getEmail()
-        );
+        $signatureComponents = $this->generateEmailSignature($verifyEmailRouteName, $user);
 
         $context = $email->getContext();
         $context['signedUrl'] = $signatureComponents->getSignedUrl();
@@ -40,6 +36,15 @@ class EmailVerifier
 
         $this->mailer->send($email);
     }
+
+	public function generateEmailSignature(string $verifyEmailRouteName, UserInterface $user)
+	{
+		return $this->verifyEmailHelper->generateSignature(
+			$verifyEmailRouteName,
+			$user->getId(),
+			$user->getEmail()
+		);
+	}
 
     /**
      * @throws VerifyEmailExceptionInterface

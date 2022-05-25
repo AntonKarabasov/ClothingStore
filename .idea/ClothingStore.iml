@@ -159,6 +159,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/php-translation/symfony-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/php-translation/symfony-storage" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nyholm/nsa" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/amqp-messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/redis-messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/doctrine-messenger" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/messenger" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
