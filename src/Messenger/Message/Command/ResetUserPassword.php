@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Messenger\Mesпшsage\Command;
+namespace App\Messenger\Message\Command;
 
 class ResetUserPassword
 {

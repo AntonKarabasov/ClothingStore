@@ -109,8 +109,17 @@
     "imagine/imagine": {
         "version": "1.2.0"
     },
+    "knplabs/knp-components": {
+        "version": "v3.5.0"
+    },
+    "knplabs/knp-paginator-bundle": {
+        "version": "v5.8.0"
+    },
     "laminas/laminas-code": {
         "version": "4.5.1"
+    },
+    "lexik/form-filter-bundle": {
+        "version": "v7.0.2"
     },
     "lorenzo/pinky": {
         "version": "1.0.6"

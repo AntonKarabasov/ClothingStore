@@ -11,7 +11,6 @@ use SymfonyCasts\Bundle\ResetPassword\ResetPasswordHelperInterface;
 
 class ResetUserPasswordHandler implements MessageHandlerInterface
 {
-
 	/**
 	 * @var UserManager
 	 */
@@ -53,5 +52,4 @@ class ResetUserPasswordHandler implements MessageHandlerInterface
 			//
 		}
 	}
-
 }
