@@ -74,7 +74,7 @@
       </notes>
       <segment>
         <source>An email has been sent. Please check your inbox to complete registration.</source>
-        <target>Письмо было отравлено. Пожалуйста проверьте вашу почту.</target>
+        <target>Письмо было отравлено. Пожалуйста проверьте ваш email.</target>
       </segment>
     </unit>
     <unit id="kQWnsB7" name="Your email address has been verified.">
@@ -309,7 +309,7 @@
       </notes>
       <segment>
         <source>Enter your address</source>
-        <target>Введите вашу почту</target>
+        <target>Введите ваш полный адрес</target>
       </segment>
     </unit>
     <unit id="TXm0FaS" name="Enter your zipcode">
@@ -319,7 +319,7 @@
       </notes>
       <segment>
         <source>Enter your zipcode</source>
-        <target>Введите ваш индекс</target>
+        <target>Введите ваш почтовый индекс</target>
       </segment>
     </unit>
     <unit id="KDf2_hy" name="Enter your email">
@@ -329,6 +329,18 @@
       <segment>
         <source>Enter your email</source>
         <target>Введите ваш email</target>
+      </segment>
+    </unit>
+    <unit id="15er7qD" name="profile_edit.header">
+      <segment>
+        <source>profile.header</source>
+        <target>Редактировать профиль</target>
+      </segment>
+    </unit>
+    <unit id="15bvn7D" name="profile_edit.btn">
+      <segment>
+        <source>profile.btn</source>
+        <target>СОХРАНИТЬ ИЗМЕНЕНИЯ</target>
       </segment>
     </unit>
     <unit id="zfaDQSW" name="I agree to the &lt;a href=&quot;#&quot;&gt;privacy policy&lt;/a&gt;">
@@ -384,6 +396,325 @@
       <segment>
         <source>user_signup.heading</source>
         <target>Форма регистрации</target>
+      </segment>
+    </unit>
+    <unit id="shgMdUS" name="user_signup.btn">
+      <segment>
+        <source>user_signup.heading</source>
+        <target>Зарегистрироваться</target>
+      </segment>
+    </unit>
+    <unit id="sMIMd1S" name="category_title.jeans">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/templates/main/_embed/_menu/_menu_item.html.twig.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>category_title.jeans</source>
+        <target>Джинсы</target>
+      </segment>
+    </unit>
+    <unit id="sM4Md1S" name="category_title.jackets">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/templates/main/_embed/_menu/_menu_item.html.twig.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>category_title.jackets</source>
+        <target>Куртки</target>
+      </segment>
+    </unit>
+    <unit id="2M4Md1S" name="category_title.shirts">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/templates/main/_embed/_menu/_menu_item.html.twig.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>category_title.shirts</source>
+        <target>Рубашки</target>
+      </segment>
+    </unit>
+    <unit id="3M4Md1S" name="category_title.sneakers">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/templates/main/_embed/_menu/_menu_item.html.twig.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>category_title.sneakers</source>
+        <target>Кроссовки</target>
+      </segment>
+    </unit>
+    <unit id="4M4Md1S" name="category_title.t-shirts">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/templates/main/_embed/_menu/_menu_item.html.twig.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>category_title.t-shirts</source>
+        <target>Футболки</target>
+      </segment>
+    </unit>
+    <unit id="5M4Md1S" name="category_title.my_profile">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/templates/main/_embed/_menu/_menu_item.html.twig.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>category_title.my_profile</source>
+        <target>Мой профиль</target>
+      </segment>
+    </unit>
+    <unit id="6M4Md1S" name="category_title.login">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/templates/main/_embed/_menu/_menu_item.html.twig.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>category_title.login</source>
+        <target>войти</target>
+      </segment>
+    </unit>
+    <unit id="684Md1S" name="category_title.cart">
+      <notes>
+        <note category="file-source" priority="1">ClothingStore/templates/main/_embed/_menu/_menu_item.html.twig.html.twig:33</note>
+      </notes>
+      <segment>
+        <source>category_title.cart</source>
+        <target>Корзина</target>
+      </segment>
+    </unit>
+    <unit id="685Md1S" name="main_page.show">
+      <segment>
+        <source>main_page.show</source>
+        <target>показать</target>
+      </segment>
+    </unit>
+    <unit id="6o5Mp1S" name="main_page.new">
+      <segment>
+        <source>main_page.new</source>
+        <target>Новая коллекция!</target>
+      </segment>
+    </unit>
+    <unit id="6o5Mv1S" name="main_page.discounts">
+      <segment>
+        <source>main_page.discounts</source>
+        <target>Скидки больше 50%</target>
+      </segment>
+    </unit>
+    <unit id="6o5Dv1S" name="recommend.title">
+      <segment>
+        <source>recommend.title</source>
+        <target>Рекомендуем</target>
+      </segment>
+    </unit>
+    <unit id="7o5Dv1S" name="recommend.new">
+      <segment>
+        <source>recommend.new</source>
+        <target>Новинка</target>
+      </segment>
+    </unit>
+    <unit id="7o5Dv1D" name="footer.links">
+      <segment>
+        <source>footer.links</source>
+        <target>Полезные ссылки</target>
+      </segment>
+    </unit>
+    <unit id="7o5fv1D" name="footer.links_homepage">
+      <segment>
+        <source>footer.links_homepage</source>
+        <target>Домашняя страница</target>
+      </segment>
+    </unit>
+    <unit id="7o5bv1D" name="footer.links_sign_up">
+      <segment>
+        <source>footer.links_sign_up</source>
+        <target>Регистрация</target>
+      </segment>
+    </unit>
+    <unit id="7obDv1D" name="footer.account">
+      <segment>
+        <source>footer.account</source>
+        <target>Мой аккаунт</target>
+      </segment>
+    </unit>
+    <unit id="7o5gv1D" name="footer.account_sign_in">
+      <segment>
+        <source>footer.account_sign_in</source>
+        <target>Войти</target>
+      </segment>
+    </unit>
+    <unit id="7o5Dv1t" name="footer.account_cart">
+      <segment>
+        <source>footer.account_cart</source>
+        <target>Корзина</target>
+      </segment>
+    </unit>
+    <unit id="7o5rv1D" name="footer.account_profile">
+      <segment>
+        <source>footer.account_profile</source>
+        <target>Мой профиль</target>
+      </segment>
+    </unit>
+    <unit id="7oghv1D" name="footer.language">
+      <segment>
+        <source>footer.language</source>
+        <target>Изменить язык</target>
+      </segment>
+    </unit>
+    <unit id="75hbv1D" name="quantity">
+      <segment>
+        <source>quantity</source>
+        <target>Количество</target>
+      </segment>
+    </unit>
+    <unit id="7nbbv1D" name="login.title">
+      <segment>
+        <source>login.title</source>
+        <target>Пожалуйста войдите</target>
+      </segment>
+    </unit>
+    <unit id="45bbv1D" name="login.password">
+      <segment>
+        <source>login.password</source>
+        <target>Пароль</target>
+      </segment>
+    </unit>
+    <unit id="45bbv1D" name="login.remember">
+      <segment>
+        <source>login.remember</source>
+        <target>Запомнить меня</target>
+      </segment>
+    </unit>
+    <unit id="cfgbv1D" name="login.btn">
+      <segment>
+        <source>login.btn</source>
+        <target>ВОЙТИ</target>
+      </segment>
+    </unit>
+    <unit id="45tnv1D" name="login.create">
+      <segment>
+        <source>login.create</source>
+        <target>Создать аккаунт</target>
+      </segment>
+    </unit>
+    <unit id="45dvh1D" name="login.reset">
+      <segment>
+        <source>login.reset</source>
+        <target>Сбросить пароль</target>
+      </segment>
+    </unit>
+    <unit id="45cvh1D" name="reset_password.title">
+      <segment>
+        <source>reset_password.title</source>
+        <target>Сбросить пароль</target>
+      </segment>
+    </unit>
+    <unit id="tydvh1D" name="reset_password.message">
+      <segment>
+        <source>reset_password.message</source>
+        <target>Введите адрес вашей электронной почты, и мы вышлем вам
+          ссылку для сброса пароля.</target>
+      </segment>
+    </unit>
+    <unit id="4hjvh1D" name="reset_password.btn">
+      <segment>
+        <source>reset_password.btn</source>
+        <target>Отправить письмо для сброса пароля</target>
+      </segment>
+    </unit>
+    <unit id="4hkvhqD" name="profile.header">
+      <segment>
+        <source>profile.header</source>
+        <target>Добро пожаловать в ваш профиль!</target>
+      </segment>
+    </unit>
+    <unit id="4hbvhqD" name="profile.email">
+      <segment>
+        <source>profile.email</source>
+        <target>Ваш email</target>
+      </segment>
+    </unit>
+    <unit id="14bvhqD" name="profile.name">
+      <segment>
+        <source>profile.name</source>
+        <target>Ваше полное имя</target>
+      </segment>
+    </unit>
+    <unit id="14b67qD" name="profile.phone">
+      <segment>
+        <source>profile.phone</source>
+        <target>Ваш номер телефона</target>
+      </segment>
+    </unit>
+    <unit id="1hj67qD" name="profile.address">
+      <segment>
+        <source>profile.address</source>
+        <target>Ваш адрес</target>
+      </segment>
+    </unit>
+    <unit id="1hkj7qD" name="profile.zipcode">
+      <segment>
+        <source>profile.zipcode</source>
+        <target>Ваш почтовый индекс</target>
+      </segment>
+    </unit>
+    <unit id="17m67qD" name="profile.message">
+      <segment>
+        <source>profile.message</source>
+        <target>Пожалуйста, прежде чем сделать заказ, заполните профиль.</target>
+      </segment>
+    </unit>
+    <unit id="1mn67qD" name="profile.edit">
+      <segment>
+        <source>profile.edit</source>
+        <target>ИЗМЕНИТЬ ПРОФИЛЬ</target>
+      </segment>
+    </unit>
+    <unit id="15667qD" name="profile.logout">
+      <segment>
+        <source>profile.logout</source>
+        <target>ВЫЙТИ</target>
+      </segment>
+    </unit>
+    <unit id="75hfv1D" name="cart.added">
+      <segment>
+        <source>cart.added</source>
+        <target>добавлено</target>
+      </segment>
+    </unit>
+    <unit id="7ogfv1D" name="cart.add">
+      <segment>
+        <source>cart.add</source>
+        <target>добавить в корзину</target>
+      </segment>
+    </unit>
+    <unit id="167vn7D" name="cart.your_cart">
+      <segment>
+        <source>cart.your_cart</source>
+        <target>Ваша корзина</target>
+      </segment>
+    </unit>
+    <unit id="7ogfg1D" name="product_title.b371ab95-fc38-4dd2-b446-c7771809c29c">
+      <segment>
+        <source>product_title.b371ab95-fc38-4dd2-b446-c7771809c29c</source>
+        <target>Голубые эластичные джинсы скинни Topman</target>
+      </segment>
+    </unit>
+    <unit id="7orvg1D" name="product_title.f6345a6c-f02d-4614-b66b-277a6739ab06">
+      <segment>
+        <source>product_title.f6345a6c-f02d-4614-b66b-277a6739ab06</source>
+        <target>Черные зауженные джинсы Jack and Jones Intelligence Glenn</target>
+      </segment>
+    </unit>
+    <unit id="fogfg1D" name="product_title.db207083-f598-43df-a265-b518a677604d">
+      <segment>
+        <source>product_title.db207083-f598-43df-a265-b518a677604d</source>
+        <target>Голубые джинсы скинни Levi's 510</target>
+      </segment>
+    </unit>
+    <unit id="7olfg1D" name="product_title.e72b579c-2292-47fd-840c-e12b48f198b5">
+      <segment>
+        <source>product_title.e72b579c-2292-47fd-840c-e12b48f198b5</source>
+        <target>Темно-синие джинсы скинни Calvin Klein Jeans</target>
+      </segment>
+    </unit>
+    <unit id="7klfg1D" name="product_title.2c95a7b2-a88a-4020-ac9d-096c18fb8ac0">
+      <segment>
+        <source>product_title.2c95a7b2-a88a-4020-ac9d-096c18fb8ac0</source>
+        <target>Узкие джинсы Calvin Klein Jeans средней степени потертости</target>
       </segment>
     </unit>
   </file>

@@ -27,12 +27,12 @@
 
                         <div class="form-footer">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-6">
                                     <button type="submit" class="btn btn btn-success">
-                                        SIGN UP
+                                        {{ 'user_signup.btn'|trans }}
                                     </button>
                                 </div>
-                                <div class="col-lg-8">
+                                <div class="col-lg-6">
                                     <div class="custom-control custom-checkbox">
                                         {{ form_widget(registrationForm.agreeTerms) }}
                                         {{ form_label(registrationForm.agreeTerms) }}

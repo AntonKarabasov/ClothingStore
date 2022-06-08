@@ -16,12 +16,12 @@
 }
 
 .btn-link {
-    border-bottom: 4px solid #ff59bd !important;
+    border-bottom: 4px solid #595fff !important;
     background-color: transparent;
 }
 
 .btn-link:hover {
-    background: linear-gradient(to right, #da2893 2%,#93002F 82%);
+    background: linear-gradient(to right, #3a28da 2%,#020093 82%);
 }
 
 .btn-success {

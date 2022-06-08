@@ -36,13 +36,13 @@
 
 .menu-item .active {
     display: inline;
-    border-bottom: 3px solid #F13C76;
-    color: #f13c76
+    border-bottom: 3px solid #423cf1;
+    color: #3f3cf1
 }
 .menu-item.active div {
     display: inline;
-    border-bottom: 3px solid #F13C76;
-    color: #f13c76
+    border-bottom: 3px solid #423cf1;
+    color: #3f3cf1
 }
 /*
 @media screen and (max-width: 991px) {
@@ -71,7 +71,7 @@
 .mobile-menu li.active > a,
 .menu li:hover > a,
 .menu li.active > a {
-    color: #dc143c;
+    color: #404fbf;
 }
 
 .font-weight-bold > a {
@@ -95,7 +95,7 @@
     height: 100%;
     top: 0;
     margin-left: 0;
-    background-image: linear-gradient(to right top, #ffc6f5, #f9d6fd, #f7e5ff, #f8f3ff, #ffffff);
+    background-image: linear-gradient(to right top, #c6c7ff, #d9d6fd, #e7e5ff, #f4f3ff, #ffffff);
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;

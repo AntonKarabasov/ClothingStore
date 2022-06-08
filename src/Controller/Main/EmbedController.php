@@ -16,7 +16,13 @@ class EmbedController extends AbstractController
 			$params['category'] = $categoryId;
 		}
 
-		$products = $productRepository->findBy($params, ['id' => 'DESC'], $productCount);
+		$products = $productRepository->findBy($params,  ['id' => 'DESC'], $productCount);
+
+	    foreach ($products as $id => $product) {
+		    if ($product->getIsDeleted() === true) {
+			    unset($products[$id]);
+		    }
+	    }
 
         return $this->render('main/_embed/_similar_products.html.twig', [
             'products' => $products,

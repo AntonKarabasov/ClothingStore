@@ -6,6 +6,7 @@
     {% set isBold = 0 %}
 {% endif %}
 
+{% set categoryTitle = 'category_title.' ~ slug %}
 {% set url = 'main_homepage' %}
 {% set isActiveItem = 0 %}
 
@@ -29,6 +30,6 @@
     {% if isActiveItem %}active{% endif %}
 ">
     <a href="{{ url }}">
-        <div>{{ label }}</div>
+        <div><nobr>{{ categoryTitle|trans }}</nobr></div>
     </a>
 </li>

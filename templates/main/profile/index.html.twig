@@ -8,44 +8,44 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="page-details mt-4">
-                        <h1 class="h4 mb-3 font-weight-normal title-gradient-1" id="page_header_title">Welcome, to your profile!</h1>
+                        <h1 class="h4 mb-3 font-weight-normal title-gradient-1" id="page_header_title">{{ 'profile.header'|trans }}</h1>
                         <table class="table">
                             <tbody>
                             <tr>
-                                <td>Your email: </td>
+                                <td>{{ 'profile.email'|trans }}: </td>
                                 <td>{{ app.user.email }}</td>
                             </tr>
                             <tr>
-                                <td>Your full name: </td>
+                                <td>{{ 'profile.name'|trans }}: </td>
                                 <td>{% if app.user.fullName %}{{ app.user.fullName }}{% else %}-{% endif %}</td>
                             </tr>
                             <tr>
-                                <td>Your phone: </td>
+                                <td>{{ 'profile.phone'|trans }}: </td>
                                 <td>{% if app.user.phone %}{{ app.user.phone }}{% else %}-{% endif %}</td>
                             </tr>
                             <tr>
-                                <td>Your address: </td>
+                                <td>{{ 'profile.address'|trans }}: </td>
                                 <td>{% if app.user.address %}{{ app.user.address }}{% else %}-{% endif %}</td>
                             </tr>
                             <tr>
-                                <td>Your zipcode: </td>
+                                <td>{{ 'profile.zipcode'|trans }}: </td>
                                 <td>{% if app.user.zipcode %}{{ app.user.zipcode }}{% else %}-{% endif %}</td>
                             </tr>
                             </tbody>
                         </table>
 
                         <div class="alert alert-info">
-                            Please, before you make some order fill your full information.
+                            {{ 'profile.message'|trans }}
                         </div>
                         <hr/>
                         <div class="form-footer-buttons">
                             <a href="{{ path('main_profile_edit') }}" class="btn btn-link btn-dark">
                                 <i class="far fa-address-card"></i>
-                                <span>EDIT PROFILE INFO</span>
+                                <span>{{ 'profile.edit'|trans }}</span>
                             </a>
                             <a href="{{ path('main_logout') }}" class="btn btn-link btn-dark">
                                 <i class="fas fa-sign-out-alt"></i>
-                                <span>LOGOUT</span>
+                                <span>{{ 'profile.logout'|trans }}</span>
                             </a>
                         </div>
                     </div>

@@ -21,6 +21,13 @@ class CategoryController extends AbstractController
 
 		$products = $category->getProducts()->getValues();
 
+	    foreach ($products as $id => $product) {
+			if ($product->getIsDeleted() === true) {
+				unset($products[$id]);
+			}
+		}
+
+
         return $this->render('main/category/show.html.twig', [
             'category' => $category,
             'products' => $products

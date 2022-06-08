@@ -75,10 +75,10 @@ body {
 }
 ::-webkit-scrollbar {
     width: 7px;
-    background-color: #fdbcd1;
+    background-color: #bfbcfd;
 }
 ::-webkit-scrollbar-thumb {
-    background: #fdbcd1;
+    background: #bfbcfd;
 }
 
 .text-center {

@@ -36,7 +36,7 @@
 
 .header-banner .link {
     color: white;
-    border-bottom: 1px #ffb9b9 solid;
+    border-bottom: 1px #bfbcfd solid;
 }
 .header-banner a:hover {
     text-decoration: none;
@@ -64,7 +64,7 @@
     background: rgba(0, 0, 0, .4);
     -webkit-clip-path: polygon(12% 8%, 95% 0, 87% 88%, 0% 100%);
     clip-path: polygon(12% 8%, 95% 0, 87% 88%, 0% 100%);
-    border: 3px solid #ff59bd!important;
+    border: 3px solid #5c59ff!important;
     padding: 25px 75px;
     text-align: center;
     color: white;
@@ -103,7 +103,7 @@
 
 .banner-big .banner-content {
     text-align: center;
-    border: 3px solid #ff59bd!important;
+    border: 3px solid #5c59ff!important;
     padding: 25px 50px;
     -webkit-clip-path: polygon(12% 8%, 95% 0, 87% 88%, 0% 100%);
     clip-path: polygon(12% 8%, 95% 0, 87% 88%, 0% 100%);

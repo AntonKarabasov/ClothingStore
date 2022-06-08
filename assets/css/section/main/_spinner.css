@@ -15,7 +15,7 @@
     margin: 8px;
     border-radius: 50%;
     border: 6px solid #fff;
-    border-color: #ff59bd transparent #ff59bd transparent;
+    border-color: #5961ff transparent #5961ff transparent;
     animation: spinner-dual-ring 1.2s linear infinite;
 }
 @keyframes spinner-dual-ring {

@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="page-details page-login mt-4">
-                        <h1 class="h3 mb-3 font-weight-normal title-gradient-1">Reset your password</h1>
+                        <h1 class="h3 mb-3 font-weight-normal title-gradient-1">{{ 'reset_password.title'|trans }}</h1>
                         {% for flash_error in app.flashes('reset_password_error') %}
                             <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
                         {% endfor %}
@@ -20,13 +20,12 @@
                             </div>
                             <div>
                                 <small>
-                                    Enter your email address and we will send you a
-                                    link to reset your password.
+                                    {{ 'reset_password.message'|trans }}
                                 </small>
                             </div>
 
                             <div class="form-footer-buttons">
-                                <button type="submit" class="btn btn-primary">Send password reset email</button>
+                                <button type="submit" class="btn btn-primary">{{ 'reset_password.btn'|trans }}</button>
                             </div>
                         {{ form_end(requestForm) }}
                     </div>

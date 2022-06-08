@@ -10,7 +10,7 @@
 }
 
 .cart-dropdown a:hover {
-    color: #f13c76;
+    color: #3c3ff1;
 }
 
 .cart-dropdown .cart-dropdown-btn-toggle {
@@ -96,7 +96,7 @@
 }
 
 .cart-dropdown-window .product-title a:hover {
-    color: #f13c76;
+    color: #3c3ff1;
     text-decoration: none;
 }
 

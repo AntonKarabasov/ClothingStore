@@ -10,19 +10,19 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="banner banner-big">
-                    <a href="#">
+                    <a href="{{ path('main_category_show', {'slug': 'jeans'}) }}">
                         <img src="{{ asset('build/images/banner/collection/banner_1.jpg') }}" alt="banner">
                     </a>
 
                     <div class="banner-content">
                         <h3 class="banner-subtitle">
-                            New Collection!
+                            {{ 'main_page.new'|trans }}
                         </h3>
                         <h2 class="banner-title">
-                            Jeans
+                            {{ 'category_title.jeans'|trans }}
                         </h2>
-                        <a href="#" class="btn btn-link">
-                            Show me
+                        <a href="{{ path('main_category_show', {'slug': 'jeans'}) }}" class="btn btn-link">
+                            {{ 'main_page.show'|trans }}
                         </a>
                     </div>
                 </div>
@@ -30,19 +30,19 @@
 
             <div class="col-lg-6">
                 <div class="banner banner-big">
-                    <a href="#">
+                    <a href="{{ path('main_category_show', {'slug': 'jackets'}) }}">
                         <img src="{{ asset('build/images/banner/collection/banner_2.jpg') }}" alt="banner">
                     </a>
 
                     <div class="banner-content">
                         <h3 class="banner-subtitle">
-                            Discounts Over 50%
+                            {{ 'main_page.discounts'|trans }}
                         </h3>
                         <h2 class="banner-title">
-                            Jackets
+                            {{ 'category_title.jackets'|trans }}
                         </h2>
-                        <a href="#" class="btn btn-link">
-                            Show me
+                        <a href="{{ path('main_category_show', {'slug': 'jackets'}) }}" class="btn btn-link">
+                            {{ 'main_page.show'|trans }}
                         </a>
                     </div>
                 </div>
@@ -52,16 +52,13 @@
         <div class="row mt-1 justify-content-center align-items-center">
             <div class="col-md-6 col-lg-4">
                 <div class="banner banner-middle">
-                    <a href="#">
+                    <a href="{{ path('main_category_show', {'slug': 'shirts'}) }}">
                         <img src="{{ asset('build/images/banner/collection/banner_3.jpg') }}" alt="banner">
                     </a>
 
                     <div class="banner-content">
-                        <h3 class="banner-subtitle">
-                            Unique!
-                        </h3>
-                        <a href="#" class="btn btn-link">
-                            Hats
+                        <a href="{{ path('main_category_show', {'slug': 'shirts'}) }}" class="btn btn-link">
+                            {{ 'category_title.shirts'|trans }}
                         </a>
                     </div>
                 </div>
@@ -69,16 +66,13 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="banner banner-middle">
-                    <a href="#">
+                    <a href="{{ path('main_category_show', {'slug': 't-shirts'}) }}">
                         <img src="{{ asset('build/images/banner/collection/banner_4.jpg') }}" alt="banner">
                     </a>
 
                     <div class="banner-content">
-                        <h3 class="banner-subtitle">
-                            Fashionable!
-                        </h3>
-                        <a href="#" class="btn btn-link">
-                            Dresses
+                        <a href="{{ path('main_category_show', {'slug': 't-shirts'}) }}" class="btn btn-link">
+                            <nobr>{{ 'category_title.t-shirts'|trans }}</nobr>
                         </a>
                     </div>
                 </div>
@@ -86,16 +80,12 @@
 
             <div class="col-md-6 col-lg-4">
                 <div class="banner banner-middle">
-                    <a href="#">
+                    <a href="{{ path('main_category_show', {'slug': 'sneakers'}) }}">
                         <img src="{{ asset('build/images/banner/collection/banner_5.jpg') }}" alt="banner">
                     </a>
-
                     <div class="banner-content">
-                        <h3 class="banner-subtitle text-white">
-                            Branded!
-                        </h3>
-                        <a href="#" class="btn btn-link">
-                            Sneakers
+                        <a href="{{ path('main_category_show', {'slug': 'sneakers'}) }}" class="btn btn-link">
+                            {{ 'category_title.sneakers'|trans }}
                         </a>
                     </div>
                 </div>

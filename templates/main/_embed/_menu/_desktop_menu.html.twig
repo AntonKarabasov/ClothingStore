@@ -10,41 +10,36 @@
         <ul class="menu">
             {% include 'main/_embed/_menu/_menu_item.html.twig' with {
                 'targetRoute': 'main_category_show',
-                'slug': 'jeans',
-                'label': 'Jeans'
+                'slug': 'jeans'
             } %}
             {% include 'main/_embed/_menu/_menu_item.html.twig' with {
                 'targetRoute': 'main_category_show',
-                'slug': 'jackets',
-                'label': 'Jackets'
+                'slug': 'jackets'
             } %}
             {% include 'main/_embed/_menu/_menu_item.html.twig' with {
                 'targetRoute': 'main_category_show',
-                'slug': 'shirts',
-                'label': 'Shirts'
+                'slug': 'shirts'
             } %}
             {% include 'main/_embed/_menu/_menu_item.html.twig' with {
                 'targetRoute': 'main_category_show',
-                'slug': 'sneakers',
-                'label': 'Sneakers'
-            } %}
-            {% include 'main/_embed/_menu/_menu_item.html.twig' with {
-                'targetRoute': 'main_category_show',
-                'slug': 'hats',
-                'label': 'Hats'
+                'slug': 't-shirts'
             } %}
 
+            {% include 'main/_embed/_menu/_menu_item.html.twig' with {
+                'targetRoute': 'main_category_show',
+                'slug': 'sneakers'
+            } %}
             {% if app.user %}
                 {% include 'main/_embed/_menu/_menu_item.html.twig' with {
                     'targetRoute': 'main_profile_index',
                     'isBold': 1,
-                    'label': 'My profile'
+                    'slug': 'my_profile'
                 } %}
             {% else %}
                 {% include 'main/_embed/_menu/_menu_item.html.twig' with {
                     'targetRoute': 'main_login',
                     'isBold': 1,
-                    'label': 'Login'
+                    'slug': 'login'
                 } %}
             {% endif %}
         </ul>

@@ -3,7 +3,7 @@
 }
 
 .page-item.active .btn-nav {
-    color: #f13c76;
+    color: #453cf1;
     border-color: #e8e8e8;
 }
 
@@ -36,7 +36,7 @@
 
 .btn-nav:hover, .btn-nav:focus {
     box-shadow: none;
-    color: #f13c76;
+    color: #453cf1;
     border-color: #e3e3e3;
     text-decoration: none;
     outline: none !important;

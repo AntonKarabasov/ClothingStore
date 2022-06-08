@@ -20,7 +20,7 @@
 .form-control:focus {
     color: #777;
     background-color: white;
-    border-color: #cc66aa;
+    border-color: #6866cc;
     box-shadow: none;
 }
 
@@ -90,7 +90,7 @@ label {
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     color: white;
     border-color: #d7d6d6;
-    background-color: #cc66aa;
+    background-color: #6866cc;
 }
 
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
